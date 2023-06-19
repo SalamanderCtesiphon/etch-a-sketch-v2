@@ -31,12 +31,13 @@ main {
   height: 35vw;
   width: 35vw; 
   display: grid; 
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
 }
 
 .container > div {
-  border: 1px solid black;
   height: auto;
   width: auto;
+}
+
+.container > div:hover {
+  background-color: lightgray;
 }
