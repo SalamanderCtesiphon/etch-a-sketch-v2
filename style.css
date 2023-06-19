@@ -38,6 +38,6 @@ main {
   width: auto;
 }
 
-.container > div:hover {
+/* .container > div:hover {
   background-color: lightgray;
-}
+} */
