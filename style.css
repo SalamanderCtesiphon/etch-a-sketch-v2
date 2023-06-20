@@ -76,5 +76,6 @@ main {
 .container > div {
   height: auto;
   width: auto;
+  border: 1px solid black;
 }
 
