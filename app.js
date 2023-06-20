@@ -1,7 +1,14 @@
+const submit = document.querySelector('.shadow__btn');
+submit.addEventListener('click', (e) => {
+  e.preventDefault();
+  const resolution = document.getElementById('resolution').value;
+  createGrid(resolution);
+});
 
 
-const createGrid = function() {
-  let n = 10;
+
+
+const createGrid = function(n) {
   let res = n * n;
   const container = document.querySelector('.container');
   for(let i = 0; i < res; i++) {
@@ -21,6 +28,7 @@ const createGrid = function() {
 
 };
 
-createGrid();
+
+
 
 
