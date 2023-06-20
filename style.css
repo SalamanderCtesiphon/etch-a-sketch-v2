@@ -38,6 +38,10 @@ main {
   width: auto;
 }
 
-.container > div:hover {
+/* .container > div:hover {
   background-color: lightgray;
+} */
+
+.square {
+  border: 1px solid black;
 }
