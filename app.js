@@ -8,8 +8,13 @@ submit.addEventListener('click', (e) => {
   e.preventDefault();
 
   let resolution = document.getElementById('resolution').value;
-
-  createGrid(resolution);
+  if(resolution > 100 || resolution < 2) {
+    alert('please enter a number between 2 and 100');
+    form.reset();
+    return;
+  } else {
+    createGrid(resolution);
+  }
 
   form.reset();
 
