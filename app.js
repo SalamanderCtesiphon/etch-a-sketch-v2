@@ -1,3 +1,6 @@
+const currentYear = document.querySelector('.year');
+currentYear.textContent = new Date().getFullYear();
+
 const submit = document.querySelector('.shadow__btn');
 const form = document.getElementById('form');
 
@@ -35,7 +38,7 @@ const createGrid = function(n) {
     });
 
   });
-  
+
 };
 
 
