@@ -37,8 +37,20 @@ const createGrid = function(n) {
   const squares = document.querySelectorAll('.square');
 
   squares.forEach((square) => {
+    let a = 0.1;
     square.addEventListener('mouseover', () => {
-      square.style.backgroundColor = 'blue';
+      /* const r = Math.floor(Math.random() * 255);
+      const g = Math.floor(Math.random() * 255);
+      const b = Math.floor(Math.random() * 255); */
+      const r = 0;
+      const g = 0;
+      const b = 0;
+      if(a < 1 ) {
+        a += 0.1;
+      } 
+      const color = `rgb(${r}, ${g}, ${b}, ${a})`;
+      
+      square.style.backgroundColor = color;
 
     });
 
